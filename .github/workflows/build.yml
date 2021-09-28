@@ -28,6 +28,7 @@ jobs:
         run: CI=true yarn test
   dummy-check:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Dummy Step
         run: echo "success"
